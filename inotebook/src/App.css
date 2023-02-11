@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-link:hover {
+  color: green !important;
+}
+.active {
+  /* border-bottom: 2px solid green; */
+  text-decoration: underline !important;
+}
+
+.edit {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit:hover {
+  color: rgb(37, 216, 37);
+}
+
+.main{
+  /* top: 60px !important; */
+  z-index: 99 !important;
+}
+
+.delete {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete:hover {
+    color: rgb(216, 37, 37);
+    transition:all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .bg-img{
+    background-image:linear-gradient(to bottom, rgba(225, 226, 238, 0.52), rgba(175, 116, 161, 0.73)), url(../public/images/note2.jpg)  ;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-img input[type = text] {
+    background: rgba(211, 196, 196, 0.671);
+    border: 1px solid rgb(78, 70, 48);
+  }
+  
+  input[type = text]:focus {
+    border: none;
+    box-shadow: none;
+   }
+
+  .bg-img input[type = text]:focus{
+    background-color: transparent;
+    caret-color: green;
+    border:2px solid #000000de !important;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+
+  .bg-img label{
+    color: #000000de;
+    font-weight: bolder;
+  }
+
+  /* bg-login style here  */
+.bg-login{
+  background-color: rgb(198, 209, 214);
+}
+
+  
+  /* .animate-card:hover{
+    transition:all 0.3s ease-in-out;
+      transform: scale(1.1,1.1);
+      box-shadow: 0px 1px 3px rgb(187, 186, 186);
+  } */
+
+
+  @media(max-width:992px){
+    .edit {
+      
+      font-size: 1.9rem;
+    }
+
+    .delete {
+      font-size: 1.9rem;
+    }
+  }
