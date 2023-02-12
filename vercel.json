@@ -8,8 +8,7 @@
   "routes": [
     {
       "src": "/.*",
-      "dest": "./index.js",
-      "log" : "/.*"
+      "dest": "./index.js"
     }
   ]
 }
