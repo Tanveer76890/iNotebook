@@ -5,7 +5,7 @@ const mongoURI = MONGOURI;
 
 // const mongoURI = 'mongodb://localhost:27017/?directConnection=true&readPreference=primary'
 
-mongoose.set('strictQuery', false);
+// mongoose.set('strictQuery', false);
 
 const connectToMongo = ()=>{
      mongoose.connect(mongoURI, ()=>{
